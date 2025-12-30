@@ -1,0 +1,188 @@
+<html>
+
+<head>
+	<title>My gallery</title>
+	<link rel="stylesheet" href="style.css"> 
+	<!-- icon link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	
+
+<nav>
+  <ul> 
+    <li><a href= "index.html"> <strong>Home Page</strong> </a><li>
+	<li><a href= "biodata.html"> <strong>Biodata</strong></a><li
+	<li><a href= "experience.html"> <strong>Experience</strong></a><li>
+	<li><a href= "education.html"> <strong>Education</strong></a><li>
+	<li><a href= "family.html"> <strong>Family</strong></a><li>
+	<li><a href= "gallery.html"> <strong>Gallery</strong></a><li>
+  </ul>
+</nav>
+<div id="loading">
+    <div class="mochi">
+        <span>🍙</span>
+        <span>🍱</span>
+        <span>🍘</span>
+    </div>
+    <p><strong>Wait Okiee...🐣</strong></p>
+</div>
+<br>
+
+
+<h5 class="section-title"style="font-family: Georgia, serif"><strong>"MY MEMORIES"📸</strong></h5> 
+
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"><strong>1 / 6</strong></div>
+  <img src="selfie6.jpg" style="width:100%">
+  <div class="text"><strong>Hye!</strong></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><strong>2 / 6</strong></div>
+  <img src="selfie2.jpg" style="width:100%">
+  <div class="text"><strong>Cutiee</strong></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"><strong>3 / 6</strong></div>
+  <img src="selfie3.jpg" style="width:100%">
+  <div class="text"><strong>In her own space</strong></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><strong>4 / 6</strong></div>
+  <img src="selfie4.jpg" style="width:100%">
+  <div class="text"><strong>Pretty</strong></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"><strong>5 / 6</strong></div>
+  <img src="selfie5.jpg" style="width:100%">
+  <div class="text"><strong>Healing</strong></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><strong>6 / 6</strong></div>
+  <img src="selfie1.jpg" style="width:100%">
+  <div class="text"><strong>Singapore!</strong></div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<br>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<!-- page gallery kedua -->
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="p.islam3.jpg">
+      <img src="p.islam3.jpg" alt="p.islam3" width="600" height="400">
+    </a>
+    <div class="desc">With my bestfriends during diploma era!</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="family2.jpg">
+      <img src="family2.jpg" alt="family2" width="600" height="400">
+    </a>
+    <div class="desc">My beloved family</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pictkelas.jpg">
+      <img src="pictkelas.jpg" alt="pictkelas" width="600" height="400">
+    </a>
+    <div class="desc">My classmates from sem 1 until last sem</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="parents2.jpg">
+      <img src="parents2.jpg" alt="parents2" width="600" height="400">
+    </a>
+    <div class="desc">With my mama and abah during raya!</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<br>
+</head>
+ <!-- Footer -->
+    <footer>
+        <div class="social-links">
+        <a href="https://youtube.com/@yasminsafiah9756?si=cS5PS8AGMPoqI9ZU" class="social-link" aria-label="YouTube">
+            <i class="fab fa-youtube"></i></a>
+        
+        <a href="https://www.instagram.com/yasmin.mrzki?igsh=MWNmbzEyNGY3c2N1bQ%3D%3D&utm_source=qr"  class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.tiktok.com/@mengcurry?_r=1&_t=ZS-92aSeEaLBGm" class="social-link" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i></a>
+    </div>
+	<div>
+            <p>&copy; 2025 🍙 Yasmin Safiah 🍙. All Rights Reserved.</p>
+        </div>
+		
+		<div class="info-dates">
+        <span><strong>Data Collected:</strong> 2025-11-01</span>
+        <span><strong>Created:</strong> 2025-11-20</span>
+        <span><strong>Last Updated:</strong> <span id="last-modified">Loading...</span></span>
+    </div>
+		<script src="date.js"></script>
+		<a href="sitemap.html"> Sitemap</a>
+    </footer>
+</html>
